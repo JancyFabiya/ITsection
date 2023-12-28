@@ -1,0 +1,208 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.footer {
+    display: grid;
+    padding: 3%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 3.5rem;
+    background: #090C31;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 300px;
+    /* Set a minimum height for the container */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+}
+
+.footer-content {
+    /* ... other styles ... */
+    margin-bottom: 20px;
+    /* Add a margin to create a gap */
+}
+
+.footer-content iframe {
+    width: 100%;
+    height: 350px;
+    /* Adjust the height as needed */
+}
+
+.footer-content h4,a {
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+}
+
+.footer-content h4:hover {
+    color: #5D70D6;
+}
+
+.footer-content li {
+    margin-bottom: 16px;
+
+}
+
+.footer-content li a {
+    color: #d6d6d6;
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all .40s ease;
+
+}
+
+.footer-content li a:hover {
+    color: #5D70D6;
+}
+
+.footer-content p {
+    color: #d6d6d6;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 20px 0;
+}
+
+.icons a {
+    display: inline-block;
+    font-size: 22px;
+    color: #d6d6d6;
+    margin-right: 17px;
+    transition: all .40S ease;
+}
+
+.icons a:hover {
+    color: #5D70D6;
+}
+
+.bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 4%;
+    padding-left: 2%;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'DM Sans',sans-serif;
+}
+
+.bottom p {
+    color: white;
+}
+
+.bottom-div a {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'DM Sans',sans-serif;
+
+}
+
+.bottom-div {
+    color: white;
+
+    display: flex;
+    gap: 10px;
+    /* Add a gap between the contents */
+    align-items: flex-end;
+    /* Align items to the bottom */
+}
+
+.bottom-div a:first-child {
+    margin-right: 10px;
+    /* Add a margin to create a gap */
+}
+.logo-container {
+    width: 177px;
+    height: 85px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+
+}
+
+.logo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease;
+}
+
+.logo-container .defaultLogo,
+.logo-container .hLogo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images cover the container */
+
+}
+
+.logo-container .defaultLogo {
+    opacity: 1;
+    z-index: 1;
+}
+
+.logo-container .hLogo {
+    opacity: 0;
+    z-index: 1;
+}
+
+.logo-container:hover .defaultLogo {
+    opacity: 0;
+    z-index: 1;
+}
+
+.logo-container:hover .hLogo {
+    opacity: 1;
+    z-index: 1;
+}
+
+
+
+
+
+
+@media (max-width: 1690px) {
+    .footer {
+        padding: 50px 5% 40px;
+    }
+}
+
+@media (max-width: 1120px) {
+    .footer {
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+        gap: 2rem;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .footer {
+        grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    }
+
+    .footer-content iframe {
+        height: 250px;
+        /* Adjust the height for smaller screens */
+    }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 500px) {
+    .footer-content iframe {
+        height: 200px;
+        /* Adjust the height for even smaller screens */
+    }
+}
